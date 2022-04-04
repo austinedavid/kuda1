@@ -1,0 +1,198 @@
+:root{
+    --bg-color:rgb(192, 184, 184);
+    --txt-color-p: black;
+    --small-div-bg-color: white;
+    --sent-money-color: red;
+    --received-money-color:green;
+    --large-div-bg-color:rgb(6, 6, 39);
+    --sections-bg-color: white;
+
+    --small-card-border-radius: 5px;
+    
+    --large-card-border-radius: 10px;
+    --icons-width: 2.5rem;
+    --icons-border-radius: 50%;
+    --card-gaps: 0.4rem;
+
+    --passport-width:3rem;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: var(--bg-color);
+    width: 100%;
+    height: 100vh;
+}
+.container{
+    padding-left: 0.5rem;
+    padding-right: 0.7rem;
+}
+/* ================== first page header =========== */
+.app-header{
+    width: 100%;
+    height: 40%;
+    padding-top: 1rem;
+    background-color: var(--sections-bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 0.5rem;
+    
+
+}
+.div-photo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.div-photo-left{
+    display: flex;
+    gap: 0.3rem;
+    align-items: center;
+}
+.div-photo-left img{
+    width: var(--passport-width);
+    aspect-ratio: 1;
+    border-radius: var(--icons-border-radius);
+
+}
+.div-photo-right{
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+.div-photo-right .right-plus{
+    width: 1.5rem;
+    aspect-ratio: 1;
+    background-color: purple;
+    color: white;
+    border-radius: 50%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.add-money p{
+    font-weight: 600;
+    color: purple;
+}
+.right-plus::before{
+    content: "'";
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid purple;
+    position: absolute;
+    border-radius: 50%;
+}
+.ac-balance{
+    background-color: purple;
+    width: 90%;
+    height: 70%;
+    margin: 0 auto;
+    border-radius: var(--large-card-border-radius);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   font-weight: 500;
+    color: rgb(202, 187, 187);
+    gap: 0.7rem;
+
+}
+.ac-balance-icons{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+
+}
+.ac-balanace-icon-each{
+    display: flex;
+    flex-direction: column;
+}
+.ac-balanace-icon-each .save{
+    background-color: grey;
+    padding: 0.4rem;
+    color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ac-balance h1{
+    color: white;
+}
+/* ===================body of the first page ============= */
+
+.body{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+    overflow: auto;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    gap: 0.1rem;
+    background-color: white;
+    border-radius: var(--small-card-border-radius);
+    padding: 0.3rem;
+    
+}
+.inner-card{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.card-for-image{
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+}
+.card-for-image img{
+    width: var(--icons-width);
+    aspect-ratio: 1;
+    border-radius: var(--icons-border-radius);
+}
+.theading h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+.card-for-image p{
+    color: grey;
+}
+.cards p{
+    font-size: 0.7rem;
+}
+.credit{
+    color: red;
+}
+.debit{
+    color: green;
+}
+
+
+/* ================== the footer of the site============= */
+
+.app-footer{
+    width: 100%;
+    height: 10%;
+    background-color: var(--sections-bg-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1.5px solid black;
+}
+.footer-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: grey;
+}
+
+
